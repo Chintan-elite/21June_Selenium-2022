@@ -1,0 +1,26 @@
+package basic;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+
+import utill.Driverconnection;
+
+public class ToolsQA_form {
+	
+		public static void main(String[] args) {
+			
+			WebDriver driver = Driverconnection.getdriver();
+			driver.get("https://demoqa.com/automation-practice-form");
+			
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+			js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
+			
+			driver.findElement(By.id("firstName")).sendKeys("Tops");
+			driver.findElement(By.id("lastName")).sendKeys("Tech");
+			driver.findElement(By.id("userEmail")).sendKeys("tops@gmail.com");
+			driver.findElement(By.xpath("//*[@id=\"genterWrapper\"]/div[2]/div[2]/label")).click();
+			
+		}
+	
+}

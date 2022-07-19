@@ -16,6 +16,8 @@ public class Amazone {
 		
 		driver.findElement(By.xpath("//div[@class='nav-signin-tooltip-footer']/a")).click();
 		
+		TakeScreenShot.getScreenShot(driver,"D:\\topsgit\\reg.png");
+		
 		
 	}
 }

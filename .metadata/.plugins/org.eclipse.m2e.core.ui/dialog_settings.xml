@@ -49,6 +49,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="LearningJunit"/>
 			<item value="LearnnigSelenium_maven"/>
 		</list>
 		<list key="projectNameTemplate">

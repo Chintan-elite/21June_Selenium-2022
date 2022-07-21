@@ -13125,3 +13125,63 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-21 11:01:47.785
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-21 11:01:47.804
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@36477cf[org.springframework.tooling.boot.ls:1.30.0.202201310805(id=1021)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-21 11:01:47.811
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-21 11:01:47.858
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-21 11:01:50.225
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-07-21 11:01:50.237
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-21 11:01:53.704
+!MESSAGE Boot LS startup time from start to initialized: 5875ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-21 11:01:53.884
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.feMQHwhpisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-21 11:01:53.898
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-21 11:01:53.901
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-21 11:01:53.901
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-21 11:01:53.901
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-21 11:01:53.902
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.feMQHwhp => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-21 11:01:53.928
+!MESSAGE classpath=72 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-21 11:01:53.931
+!MESSAGE buffering callback sts4.classpath.feMQHwhp LearningJunit false 72
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-21 11:01:53.932
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-21 11:01:53.979
+!MESSAGE classpath=71 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-21 11:01:53.988
+!MESSAGE buffering callback sts4.classpath.feMQHwhp LearnnigSelenium_maven false 71
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-21 11:01:53.988
+!MESSAGE executing callback sts4.classpath.feMQHwhp 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-21 11:01:54.585
+!MESSAGE executing callback sts4.classpath.feMQHwhp SUCCESS [done]

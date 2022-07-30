@@ -44,11 +44,13 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.tops"/>
 			<item value="com.test"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="Learning_TestNG"/>
 			<item value="LearningJunit"/>
 			<item value="LearnnigSelenium_maven"/>
 		</list>

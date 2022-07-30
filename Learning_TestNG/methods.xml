@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test  name="Test">
+    <classes>
+      <class name="methodtest.Account">
+      <methods>
+      <include name="loan"></include>
+      </methods>
+      </class>
+      <class name="methodtest.Payment">
+      <methods>
+      <exclude name="debitcard"></exclude>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test  name="Test2">
+    <classes>
+      <class name="methodtest.Account">
+      <methods>
+      <include name="saving"></include>
+      </methods>
+      </class>
+      <class name="methodtest.Payment">
+      <methods>
+      <exclude name="cod"></exclude>
+      </methods>
+      </class>
+    </classes>
+  </test> 
+</suite> <!-- Suite -->

@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="basic.TestNGAssertion">
+      <class name="parameter.FbTest_para">
         <methods>
-          <include name="checkArray"/>
-          <include name="test"/>
+          <include name="close"/>
+          <include name="loginCheck" invocation-numbers="1 2"/>
+          <include name="openBrowser"/>
         </methods>
-      </class> <!-- basic.TestNGAssertion -->
+      </class> <!-- parameter.FbTest_para -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

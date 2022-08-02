@@ -1,45 +1,179 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="6" total="12" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-30T10:41:34 IST" name="Suite" finished-at="2022-07-30T10:41:34 IST" duration-ms="184">
+  <suite started-at="2022-08-02T10:09:31 IST" name="Default suite" finished-at="2022-08-02T10:10:37 IST" duration-ms="65959">
     <groups>
     </groups>
-    <test started-at="2022-07-30T10:41:34 IST" name="Test" finished-at="2022-07-30T10:41:34 IST" duration-ms="82">
-      <class name="methodtest.Account">
-        <test-method signature="loan()[pri:0, instance:methodtest.Account@4f2b503c]" started-at="2022-07-30T10:41:34 IST" name="loan" finished-at="2022-07-30T10:41:34 IST" duration-ms="11" status="PASS">
+    <test started-at="2022-08-02T10:09:31 IST" name="Default test" finished-at="2022-08-02T10:10:37 IST" duration-ms="65959">
+      <class name="parameter.FbTest_para">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:parameter.FbTest_para@1349883]" started-at="2022-08-02T10:09:31 IST" name="openBrowser" finished-at="2022-08-02T10:09:34 IST" duration-ms="3773" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loan -->
-      </class> <!-- methodtest.Account -->
-      <class name="methodtest.Payment">
-        <test-method signature="cod()[pri:0, instance:methodtest.Payment@6e0f5f7f]" started-at="2022-07-30T10:41:34 IST" name="cod" finished-at="2022-07-30T10:41:34 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- openBrowser -->
+        <test-method signature="loginCheck(java.lang.String,java.lang.String)[pri:0, instance:parameter.FbTest_para@1349883]" started-at="2022-08-02T10:09:34 IST" name="loginCheck" data-provider="dp" finished-at="2022-08-02T10:09:40 IST" duration-ms="5866" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[topsaxt@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- cod -->
-        <test-method signature="creditCard()[pri:0, instance:methodtest.Payment@6e0f5f7f]" started-at="2022-07-30T10:41:34 IST" name="creditCard" finished-at="2022-07-30T10:41:34 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- loginCheck -->
+        <test-method signature="loginCheck(java.lang.String,java.lang.String)[pri:0, instance:parameter.FbTest_para@1349883]" started-at="2022-08-02T10:09:40 IST" name="loginCheck" data-provider="dp" finished-at="2022-08-02T10:09:52 IST" duration-ms="11828" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tech@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[tech123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Facebook] but found [Log in to Facebook]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Facebook] but found [Log in to Facebook]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at parameter.FbTest_para.loginCheck(FbTest_para.java:53)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- creditCard -->
-      </class> <!-- methodtest.Payment -->
-    </test> <!-- Test -->
-    <test started-at="2022-07-30T10:41:34 IST" name="Test2" finished-at="2022-07-30T10:41:34 IST" duration-ms="20">
-      <class name="methodtest.Account">
-        <test-method signature="saving()[pri:0, instance:methodtest.Account@20140db9]" started-at="2022-07-30T10:41:34 IST" name="saving" finished-at="2022-07-30T10:41:34 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- loginCheck -->
+        <test-method signature="loginCheck(java.lang.String,java.lang.String)[pri:0, instance:parameter.FbTest_para@1349883]" started-at="2022-08-02T10:09:52 IST" name="loginCheck" data-provider="dp" finished-at="2022-08-02T10:10:31 IST" duration-ms="38780" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=103.0.5060.134)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-ISADT93', ip: '192.168.29.147', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [83bdd0cdb6037db11370aee3720d91b7, getTitle {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\chintan\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:19928}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:19928/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 83bdd0cdb6037db11370aee3720d91b7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=103.0.5060.134)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-ISADT93', ip: '192.168.29.147', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [83bdd0cdb6037db11370aee3720d91b7, getTitle {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\chintan\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:19928}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:19928/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 83bdd0cdb6037db11370aee3720d91b7
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:337)
+at parameter.FbTest_para.loginCheck(FbTest_para.java:53)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- saving -->
-      </class> <!-- methodtest.Account -->
-      <class name="methodtest.Payment">
-        <test-method signature="creditCard()[pri:0, instance:methodtest.Payment@1e6a3214]" started-at="2022-07-30T10:41:34 IST" name="creditCard" finished-at="2022-07-30T10:41:34 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- loginCheck -->
+        <test-method is-config="true" signature="close()[pri:0, instance:parameter.FbTest_para@1349883]" started-at="2022-08-02T10:10:31 IST" name="close" finished-at="2022-08-02T10:10:37 IST" duration-ms="5638" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- creditCard -->
-        <test-method signature="debitcard()[pri:0, instance:methodtest.Payment@1e6a3214]" started-at="2022-07-30T10:41:34 IST" name="debitcard" finished-at="2022-07-30T10:41:34 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- debitcard -->
-      </class> <!-- methodtest.Payment -->
-    </test> <!-- Test2 -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- close -->
+      </class> <!-- parameter.FbTest_para -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

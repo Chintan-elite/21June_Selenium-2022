@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test  name="Test">
+  <groups>
+  <run>
+  <include name="smoke"></include>
+  <exclude name="sanity"></exclude>
+  </run>
+  </groups>
+    <classes>
+      <class name="methodtest.Account"/>
+      <class name="methodtest.Payment"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test  name="Test2">
+  <groups>
+  <run>
+  <include name="sanity"></include>
+  </run>
+  </groups>
+    <classes>
+      <class name="methodtest.Account"/>
+      <class name="methodtest.Payment"/>
+    </classes>
+  </test> 
+</suite> <!-- Suite -->

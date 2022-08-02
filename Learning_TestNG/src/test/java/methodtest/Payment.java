@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 public class Payment {
 	
-	@Test
+	@Test(groups = "smoke")
 	public void creditCard()
 	{
 		System.out.println("Credit card payment");
@@ -16,7 +16,7 @@ public class Payment {
 		System.out.println("Debit card payment...");
 	}
 	
-	@Test
+	@Test(groups ="sanity" )
 	public void cod()
 	{
 		System.out.println("cod payment");
